@@ -1,7 +1,6 @@
 import streamlit as st
 import os
 import google.generativeai as genai
-import fitz
 
 
 # API key
