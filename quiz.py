@@ -100,11 +100,12 @@ if st.button("Check Answer"):
         st.session_state['conversation_history'].append(f"User Answer: {st.session_state['user_answer']}")
         st.session_state['conversation_history'].append(f"AI: {check_answer}")
 
+st.write("### Conversation History")
+for message in st.session_state['conversation_history']:
+    st.write(message)
+
 if st.button("Clear Chat History"):
     st.session_state['conversation_history'] = []
     st.session_state['current_question'] = ""
     st.session_state['user_answer'] = ""
-
-st.write("### Conversation History")
-for message in st.session_state['conversation_history']:
-    st.write(message)
+    
