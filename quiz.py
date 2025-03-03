@@ -4,7 +4,8 @@ import google.generativeai as genai
 
 
 # API key
-os.environ["GEMINI_API_KEY"] = "AIzaSyCGIfKLFbZq0KFXXnvkIpUhyqmHvu_XzME"
+# os.environ["GEMINI_API_KEY"] = "AIzaSyCGIfKLFbZq0KFXXnvkIpUhyqmHvu_XzME"
+os.environ["GEMINI_API_KEY"] = "AIzaSyBZIJInav0dk11nyOfinAN1vceJwCWur9o"
 
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
