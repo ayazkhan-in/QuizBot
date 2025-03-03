@@ -29,6 +29,13 @@ def chat_with_ai(message):
     response = chat_session.send_message(message)
     return response.text
 
+st.set_page_config(
+    page_title="Quiz Bot",
+    page_icon="🧠",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
+
 st.title("AI Quiz Generator")
 
 if 'conversation_history' not in st.session_state:
